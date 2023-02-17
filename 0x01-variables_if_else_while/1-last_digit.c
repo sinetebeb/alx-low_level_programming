@@ -4,6 +4,7 @@
 /**
  * main - Prints a random number accordingly
  * Return: Always 0 (success)
+ *
  */
 int main(void)
 {
