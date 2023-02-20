@@ -10,21 +10,23 @@
 int main(void)
 {
 
-	int d, p;
+	int d1, d2;
 
-	for (d = '0'; d < '9'; d++)
+	for (d1 = '0'; d1 <= '8'; d1++)
+	
 	{
-	for (p = d + 1; p <= '9'; p++)
-	{
-	if (p != d)
-	{
-	putchar(d);
-	putchar(p);
-	if (d == '8' && p == '9')
-	continue;
-	}
-	}
-	}
+	
+		for (d2 = d1 + 1; d2 <= '9'; d2++)
+		{
+		putchar(d1);
+		putchar(d2);
+		if (!(d1 == '8' && d2 == '9'))
+		{
+			putchar(',');
+			putchar(' ');
+			}
+			}
+			}
 	putchar('\n');
 	return (0);
 }
