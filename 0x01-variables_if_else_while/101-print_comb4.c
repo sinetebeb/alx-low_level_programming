@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 
 /**
- * main Prints all possible different combinations of three digits
+ * main - Prints all possible different combinations of three digits
  * Return: Always 0 (Success)
  */
 
@@ -13,10 +13,10 @@ int main(void)
 
 	int d, p, q;
 
-	for (d = '0' d < '9'; d++)
+	for (d = '0'; d < '9'; d++)
 	{
 
-	for (q = p + 1; p <= '9'; p++)
+	for (p = d + 1; p <= '9'; p++)
 	{
 
 	for (q = p + 1; q <= '9'; q++)
@@ -27,9 +27,13 @@ int main(void)
 	putchar(d);
 	putchar(p);
 	putchar(q);
-	if (d == '7' && p == '8'
+	if (d == '7' && p == '8')
 	continue;
-	putchar(' ,')
-	putchar('\n');
+	putchar(',');
+	putchar(' ');
+	}
+	}
+	}
+	}
 	return (0);
 }
