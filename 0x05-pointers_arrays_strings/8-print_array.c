@@ -2,14 +2,13 @@
 #include <stdio.h>
 
 /**
- * print_array - prints n elements of an array of integeers 
+ * print_array - Prints n elements of an array of integers 
  * @a: Array of integers
  * @a: Number of element of the array to be  printed
  * Return: void
  */
 
 void print_array(int *a, int n)
-
 {
 	int j;
 
